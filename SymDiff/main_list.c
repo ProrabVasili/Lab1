@@ -69,9 +69,9 @@ int in(List *list, int val)
     return 0;
 }
 
-void free_list(List *list)
+void free_list(List **list)
 {
-    List *this = list;
+    List *this = *list;
     while(this != NULL)
     {
         List *now = this;
@@ -79,4 +79,3 @@ void free_list(List *list)
         free(now);
     }
 }
-

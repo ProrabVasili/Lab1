@@ -25,4 +25,4 @@ void print_list(char *msg, List *list);
 int in(List *list, int val);
 
 /*Freeing list memory*/
-void free_list(List *list);
+void free_list(List **list);

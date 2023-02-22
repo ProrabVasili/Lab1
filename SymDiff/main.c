@@ -13,9 +13,9 @@ int main()
     print_list("Second set", second_set);
     print_list("Symmetric difference of sets", sym_diff);
 
-    free_list(first_set);
-    free_list(second_set);
-    free_list(sym_diff);
+    free_list(&first_set);
+    free_list(&second_set);
+    free_list(&sym_diff);
 
     system("pause");
 
